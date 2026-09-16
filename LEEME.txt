@@ -1,0 +1,24 @@
+HOME COMPRACAR — ARCHIVOS PARA PRODUCCIÓN
+=========================================
+
+Contenido
+---------
+indexv1.html   Home con hero fotográfico (RAV4 azul)
+indexv2.html   Home con hero en video (loop, silenciado)
+indexv3.html   Home con hero de showroom (RAV4 blanco)
+support.js     Runtime necesario para las tres páginas
+assets/        Imágenes, iconos, logos y el video del hero
+
+Cómo publicar
+-------------
+Sube la carpeta completa manteniendo la estructura. Las rutas son
+relativas, así que support.js y assets/ deben quedar al mismo nivel
+que el archivo HTML. Renombra la versión elegida a index.html.
+
+Dependencias externas
+---------------------
+- Google Fonts (Manrope)
+- Tipografía Aspekta, servida desde compracar.sandboxdelta.com
+- Google Maps embebido en la sección Sucursales
+
+Las tres versiones se pueden subir a la vez para compararlas en vivo.
