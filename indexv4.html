@@ -65,22 +65,22 @@ h1,h2,h3,h4,h5,p{margin:0}
   </div>
 </div>
 
-<section style="position:relative;overflow:hidden;background:#0c1428;padding:0 0 clamp(80px,10vw,110px);">
-  <video ref="{{ videoHero }}" src="assets/hero-video.mp4" poster="assets/hero.png" autoPlay="autoplay" loop="loop" playsInline="playsinline" muted="muted" preload="auto" aria-hidden="true" style="position:absolute;top:0;left:0;width:100%;height:clamp(620px,56vw,860px);object-fit:cover;object-position:72% 50%;pointer-events:none;"></video>
-  <div style="position:absolute;top:0;left:0;right:0;height:clamp(620px,56vw,860px);background:linear-gradient(90deg,rgba(9,17,36,0.72) 0%,rgba(9,17,36,0.52) 34%,rgba(9,17,36,0.22) 58%,rgba(9,17,36,0) 100%);pointer-events:none;"></div>
-  <div style="position:absolute;top:0;left:0;right:0;height:clamp(620px,56vw,860px);background:linear-gradient(180deg,rgba(12,20,40,0) 62%,rgba(12,20,40,0.6) 84%,#0c1428 100%);pointer-events:none;"></div>
+<section style="position:relative;overflow:hidden;background:#F2F4F7;padding:0 0 clamp(80px,10vw,110px);">
+  <img src="assets/hero-v4-blanco.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:clamp(620px,56vw,860px);object-fit:cover;object-position:80% 55%;pointer-events:none;">
+  <div style="position:absolute;top:0;left:0;right:0;height:clamp(620px,56vw,860px);background:linear-gradient(90deg,rgba(242,244,247,0.7) 0%,rgba(242,244,247,0.4) 36%,rgba(242,244,247,0) 62%);pointer-events:none;"></div>
+  <div style="position:absolute;top:0;left:0;right:0;height:clamp(620px,56vw,860px);background:linear-gradient(180deg,rgba(242,244,247,0) 62%,rgba(242,244,247,0.6) 84%,#F2F4F7 100%);pointer-events:none;"></div>
 
   <div style="position:relative;max-width:1360px;margin:0 auto;padding:clamp(122px,17vw,180px) 20px 0;display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:40px;">
     <div style="display:flex;flex-direction:column;gap:26px;">
       <div data-hero="" style="display:flex;flex-direction:column;gap:16px;">
-        <h1 style="font-size:clamp(34px,4.2vw,54px);line-height:1.05;letter-spacing:-0.025em;font-weight:700;color:#fff;text-wrap:balance;">Compramos tu auto<br>en minutos.</h1>
-        <p style="font-size:16px;line-height:1.6;color:#C3D2E8;max-width:440px;">Vende tu vehículo con <strong style="color:#fff;font-weight:700;">pago inmediato</strong> o déjalo como <strong style="color:#fff;font-weight:700;">parte de pago</strong>. Claro, rápido y seguro.</p>
+        <h1 style="font-size:clamp(34px,4.2vw,54px);line-height:1.05;letter-spacing:-0.025em;font-weight:700;color:#0D2D6B;text-wrap:balance;">Compramos<br>tu auto en minutos.</h1>
+        <p style="font-size:16px;line-height:1.6;color:#3F5070;max-width:440px;">Vende tu vehículo con <strong style="color:#0D2D6B;font-weight:700;">pago inmediato</strong> o déjalo como <strong style="color:#0D2D6B;font-weight:700;">parte de pago</strong>. Claro, rápido y seguro.</p>
       </div>
 
       <sc-if value="{{ esAngosto }}" hint-placeholder-val="{{ false }}">
         <span style="display:block;height:40vw;"></span>
       </sc-if>
-      <div id="vender" data-hero="" style="background:#fff;border-radius:18px;padding:clamp(16px,4vw,22px) clamp(16px,4vw,22px) 20px;box-shadow:0 26px 60px rgba(6,14,30,0.35);max-width:560px;min-width:0;display:flex;flex-direction:column;gap:16px;">
+      <div id="vender" data-hero="" style="background:#fff;border-radius:18px;padding:clamp(16px,4vw,22px) clamp(16px,4vw,22px) 20px;box-shadow:0 26px 60px rgba(13,45,107,0.16);max-width:560px;min-width:0;display:flex;flex-direction:column;gap:16px;">
         <h2 style="font-size:22px;font-weight:600;color:#0D2D6B;letter-spacing:-0.01em;">Inicia la venta de tu auto</h2>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
           <sc-for list="{{ pasos }}" as="p" hint-placeholder-count="4">
@@ -430,12 +430,12 @@ h1,h2,h3,h4,h5,p{margin:0}
 </section>
 
 <section id="catalogo" style="margin:72px 0 0;">
-  <div style="background:linear-gradient(120deg,#1d2f52 0%,#16264a 60%,#1a3f7b 100%);overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+  <div style="background:linear-gradient(120deg,#E4ECF7 0%,#EEF3FA 60%,#DCE6F4 100%);overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
     <img src="assets/banner-telefono.png" alt="" style="width:100%;height:100%;min-height:clamp(280px,34vw,480px);object-fit:cover;object-position:50% 50%;">
     <div data-reveal="" style="padding:clamp(36px,5vw,56px) clamp(24px,4vw,64px);display:flex;flex-direction:column;gap:18px;justify-content:center;">
-      <h2 style="font-size:clamp(22px,2.3vw,30px);line-height:1.25;font-weight:600;color:#fff;letter-spacing:-0.02em;">Tu próximo auto<br>está más cerca de lo que imaginas</h2>
-      <p style="font-size:19px;font-weight:600;color:#fff;">Consulta nuestro stock</p>
-      <p style="font-size:16px;line-height:1.55;color:#C3D2E8;">Elige tu mejor opción de pago: con entrega inmediata.</p>
+      <h2 style="font-size:clamp(22px,2.3vw,30px);line-height:1.25;font-weight:600;color:#0D2D6B;letter-spacing:-0.02em;">Tu próximo auto<br>está más cerca de lo que imaginas</h2>
+      <p style="font-size:19px;font-weight:600;color:#1A3F7B;">Consulta nuestro stock</p>
+      <p style="font-size:16px;line-height:1.55;color:#3F5070;">Elige tu mejor opción de pago: con entrega inmediata.</p>
       <a href="#catalogo" style="align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:#C0202E;color:#fff;font-size:15px;font-weight:600;padding:14px 24px;border-radius:10px;margin-top:6px;" style-hover="background:#9B1520;color:#fff">Ver catálogo
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
       </a>
@@ -612,16 +612,16 @@ h1,h2,h3,h4,h5,p{margin:0}
 </section>
 
 <section style="max-width:1360px;margin:80px auto 0;padding:0 24px;">
-  <div data-reveal="" style="background:linear-gradient(90deg,#16264a 0%,#1d3157 100%);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;">
+  <div data-reveal="" style="background:linear-gradient(120deg,#E4ECF7 0%,#EEF3FA 60%,#DCE6F4 100%);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;">
     <img src="assets/banner-nosotros.png" alt="" style="width:100%;height:100%;min-height:clamp(240px,30vw,400px);object-fit:cover;object-position:0% 50%;-webkit-mask-image:linear-gradient(90deg,#000 62%,transparent 100%);mask-image:linear-gradient(90deg,#000 62%,transparent 100%);">
     <div style="padding:clamp(32px,4.5vw,56px) clamp(24px,3.5vw,44px);display:flex;flex-direction:column;gap:18px;">
-      <span style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);color:#fff;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 14px;border-radius:6px;">
+      <span style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E2EAF4;color:#0D2D6B;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 14px;border-radius:6px;">
         <span style="width:8px;height:8px;border-radius:50%;background:#C0202E;display:inline-block;"></span>SOBRE NOSOTROS</span>
-      <h2 style="font-size:clamp(24px,2.6vw,34px);line-height:1.2;font-weight:600;color:#fff;letter-spacing:-0.02em;"><strong style="font-weight:700;">Nro 1</strong> en la compra y venta de vehículos</h2>
-      <p style="font-size:18px;line-height:1.4;color:#C3D2E8;">de autos usados y seminuevos en Chile</p>
-      <p style="font-size:15px;line-height:1.65;color:#A9BCD6;max-width:520px;">En Compracar eliminamos las vueltas y la burocracia para que vender o comprar tu auto sea una experiencia transparente y segura.</p>
+      <h2 style="font-size:clamp(24px,2.6vw,34px);line-height:1.2;font-weight:600;color:#0D2D6B;letter-spacing:-0.02em;"><strong style="font-weight:700;">Nro 1</strong> en la compra y venta de vehículos</h2>
+      <p style="font-size:18px;line-height:1.4;color:#1A3F7B;">de autos usados y seminuevos en Chile</p>
+      <p style="font-size:15px;line-height:1.65;color:#3F5070;max-width:520px;">En Compracar eliminamos las vueltas y la burocracia para que vender o comprar tu auto sea una experiencia transparente y segura.</p>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:6px;">
-        <a href="#nosotros" style="display:inline-flex;align-items:center;background:#fff;color:#0D2D6B;font-size:13px;font-weight:700;letter-spacing:0.06em;padding:15px 24px;border-radius:10px;" style-hover="background:#EEF3FC;color:#0D2D6B">CONOCE MÁS DE NOSOTROS</a>
+        <a href="#nosotros" style="display:inline-flex;align-items:center;background:#0D2D6B;color:#fff;font-size:13px;font-weight:700;letter-spacing:0.06em;padding:15px 24px;border-radius:10px;" style-hover="background:#1A3F7B;color:#fff">CONOCE MÁS DE NOSOTROS</a>
         <a href="#nosotros" aria-label="Conoce más" style="width:48px;height:48px;background:#C0202E;border-radius:10px;display:flex;align-items:center;justify-content:center;" style-hover="background:#9B1520">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
         </a>
@@ -682,44 +682,44 @@ h1,h2,h3,h4,h5,p{margin:0}
   </div>
 </section>
 
-<footer style="margin-top:80px;background:#0B1220;">
+<footer style="margin-top:80px;background:#fff;border-top:1px solid #E2EAF4;">
   <div data-stagger="" style="position:relative;max-width:1360px;margin:0 auto;padding:64px 24px 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:clamp(28px,3.5vw,48px);align-items:start;">
     <div style="display:flex;flex-direction:column;gap:18px;">
-      <p style="font-size:21px;line-height:1.35;font-weight:600;color:#fff;letter-spacing:-0.01em;max-width:300px;">Automotora número 1<br>en la compra y venta<br>de autos en Chile.</p>
+      <p style="font-size:21px;line-height:1.35;font-weight:600;color:#0D2D6B;letter-spacing:-0.01em;max-width:300px;">Automotora número 1<br>en la compra y venta<br>de autos en Chile.</p>
       <div style="display:flex;flex-direction:column;gap:10px;">
-        <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#8FA3C0;text-transform:uppercase;">Contáctanos</span>
-        <a href="tel:+56941539794" style="font-size:17px;font-weight:600;color:#fff;" style-hover="color:#fff">+56 9 4153 9794</a>
-        <a href="mailto:contacto@compracar.cl" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">contacto@compracar.cl</a>
+        <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#5C6B87;text-transform:uppercase;">Contáctanos</span>
+        <a href="tel:+56941539794" style="font-size:17px;font-weight:600;color:#0D2D6B;" style-hover="color:#C0202E">+56 9 4153 9794</a>
+        <a href="mailto:contacto@compracar.cl" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">contacto@compracar.cl</a>
       </div>
     </div>
 
-    <div style="display:flex;flex-direction:column;gap:14px;border-left:1px solid rgba(255,255,255,0.12);padding-left:clamp(20px,2.6vw,40px);">
-      <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#8FA3C0;text-transform:uppercase;">Enlaces rápidos</span>
-      <a href="#vender" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Vender mi auto</a>
-      <a href="#catalogo" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Comprar auto</a>
-      <a href="#sucursales" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Sucursales</a>
-      <a href="#subastas" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Subastas B2B</a>
-      <a href="#financiamiento" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Financiamiento</a>
-      <a href="#faq" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Preguntas frecuentes</a>
+    <div style="display:flex;flex-direction:column;gap:14px;border-left:1px solid #E2EAF4;padding-left:clamp(20px,2.6vw,40px);">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#5C6B87;text-transform:uppercase;">Enlaces rápidos</span>
+      <a href="#vender" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Vender mi auto</a>
+      <a href="#catalogo" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Comprar auto</a>
+      <a href="#sucursales" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Sucursales</a>
+      <a href="#subastas" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Subastas B2B</a>
+      <a href="#financiamiento" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Financiamiento</a>
+      <a href="#faq" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Preguntas frecuentes</a>
     </div>
 
-    <div style="display:flex;flex-direction:column;gap:14px;border-left:1px solid rgba(255,255,255,0.12);padding-left:clamp(20px,2.6vw,40px);">
-      <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#8FA3C0;text-transform:uppercase;">Empresa</span>
-      <a href="#nosotros" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Quiénes somos</a>
-      <a href="#blog" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Blog</a>
-      <a href="#terminos" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Términos y condiciones</a>
-      <a href="#privacidad" style="font-size:15px;line-height:1.4;color:#E6ECF5;" style-hover="color:#fff">Políticas de privacidad</a>
+    <div style="display:flex;flex-direction:column;gap:14px;border-left:1px solid #E2EAF4;padding-left:clamp(20px,2.6vw,40px);">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;color:#5C6B87;text-transform:uppercase;">Empresa</span>
+      <a href="#nosotros" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Quiénes somos</a>
+      <a href="#blog" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Blog</a>
+      <a href="#terminos" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Términos y condiciones</a>
+      <a href="#privacidad" style="font-size:15px;line-height:1.4;color:#1A3F7B;" style-hover="color:#C0202E">Políticas de privacidad</a>
     </div>
 
-    <a href="#" aria-label="Volver arriba" style="position:absolute;top:64px;right:24px;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;" style-hover="background:#C0202E">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
+    <a href="#" aria-label="Volver arriba" style="position:absolute;top:64px;right:24px;width:40px;height:40px;border-radius:10px;background:#F1F4F9;display:flex;align-items:center;justify-content:center;" style-hover="background:#C0202E">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:#0D2D6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
     </a>
   </div>
 
   <div style="max-width:1360px;margin:0 auto;padding:28px 24px 44px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;">
-    <p style="font-size:12px;line-height:1.5;letter-spacing:0.08em;color:#7C8EA8;text-transform:uppercase;">© 2026 compracar. todos los derechos reservados. desarrollado por <a href="https://deltadigital.cl/" target="_blank" style="color:#A9BCD6;" style-hover="color:#fff">delta digital.</a></p>
-    <span style="background:#16264A;border-radius:12px;padding:14px 28px;display:inline-flex;align-items:center;">
-      <img src="assets/logo-footer.png" alt="Compracar" style="height:26px;width:auto;display:block;">
+    <p style="font-size:12px;line-height:1.5;letter-spacing:0.08em;color:#5C6B87;text-transform:uppercase;">© 2026 compracar. todos los derechos reservados. desarrollado por <a href="https://deltadigital.cl/" target="_blank" style="color:#1A3F7B;" style-hover="color:#C0202E">delta digital.</a></p>
+    <span style="display:inline-flex;align-items:center;">
+      <img src="assets/logo.svg" alt="Compracar" style="height:30px;width:auto;display:block;">
     </span>
   </div>
 </footer>
@@ -740,13 +740,6 @@ class Component extends DCLogic {
     window.addEventListener('resize', this.onResize);
     this.onResize();
     this.iniciarEntradas();
-    const v = this.videoHero.current;
-    if (v) {
-      v.muted = true;
-      v.defaultMuted = true;
-      const p = v.play();
-      if (p && p.catch) p.catch(() => {});
-    }
   }
 
   componentWillUnmount() {
@@ -792,7 +785,6 @@ class Component extends DCLogic {
     this.fila = React.createRef();
     this.panelSucursal = React.createRef();
     this.panelMapa = React.createRef();
-    this.videoHero = React.createRef();
     this.plate1 = React.createRef();
     this.plate2 = React.createRef();
     this.plate3 = React.createRef();
@@ -866,7 +858,6 @@ class Component extends DCLogic {
       menuAbierto: !amplio && this.state.menu,
       toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
       cerrarMenu: () => this.setState({ menu: false }),
-      videoHero: this.videoHero,
       esAncho: this.state.ancho >= 900,
       esAngosto: this.state.ancho < 900,
       pasoPatente: p === 0 && !this.state.sinPatente,
